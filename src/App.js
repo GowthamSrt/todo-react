@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import SidebarMenu from './components/SidebarMenu';
+import TaskEditor from './components/TaskEditor';
+import TaskView from './components/TaskView';
 import './App.css';
 
 function App() {
+  const [view, setView] = useState('today');
+  const [showEditor, setShowEditor] = useState(false);
+
+  const handleAddTask = () => {
+    setShowEditor(true);
+  };
+
+  const handleCloseEditor = () => {
+    setShowEditor(false);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <SidebarMenu onSelect={setView} />
+      <div className="content-area">
+        <TaskView viewType={view} onAddTask={handleAddTask} />
+        {showEditor && <TaskEditor onClose={handleCloseEditor} />}
+      </div>
     </div>
   );
 }

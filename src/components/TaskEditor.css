@@ -1,0 +1,100 @@
+.task-editor {
+    background-color: #ededeb;
+    border-radius: 1rem;
+    padding: 1.8rem 1.2rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    box-shadow: 0 0.2rem 0.4rem #0000001a;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .form-group label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #333;
+  }
+
+  .task-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  input[type="text"],
+  textarea {
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ddd;
+    font-size: 0.9rem;
+    background: #fff;
+  }
+  
+  textarea {
+    resize: none;
+    height: 5rem;
+  }
+  
+  .form-inline {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  select,
+  input[type="date"] {
+    padding: 0.6rem;
+    border-radius: 0.4rem;
+    border: 1px solid #ddd;
+    background: #fff;
+  }
+  
+  .footer-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+  }
+  
+  .delete {
+    background: #ef4e4e;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    justify-content: center;
+    color: #ffffff;
+  }
+
+  .delete:hover {
+    background: #ff2f2f;
+  }
+
+  .delete:active {
+    background: #d42e2e;
+  }
+  
+  .save {
+    background: #448fff;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #ffffff;
+  }
+
+  .save:hover {
+    background: #3b7de0;
+  }
+
+  .save:active {
+    background: #2f6fb8;
+  }
+  
