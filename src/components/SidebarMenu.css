@@ -12,12 +12,12 @@
     background-color: #ededeb;
     border-radius: 1.25rem;
     padding: 1.25rem;
-    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.25rem 0.375rem #00000033;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 1rem;
-    padding-bottom: 80%;
+    padding-bottom: 75%;
 
 }
 
@@ -62,10 +62,10 @@
     background-color: #ffffff;
 }
 
-/* .menu-item.active {
+.menu-item.active {
     background-color: #ffffff;
     box-shadow: 0 0.125rem 0.25rem #0000000f;
-  } */
+  }
 
 .menu-label {
     display: flex;
